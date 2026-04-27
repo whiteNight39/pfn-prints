@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PFN Prints — Print Your Identity</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ─── NAV ─────────────────────────────────────────────── -->
+<nav class="nav">
+  <a href="index.html" class="logo">
+    <img src="https://res.cloudinary.com/ds6tdeqpm/image/upload/v1777206651/PFN_prgvr3.png" alt="PFN Prints" />
+  </a>
+  <div class="nav-links">
+    <a href="#products">Shop</a>
+    <a href="pages/signature.html">Signature</a>
+    <a href="pages/custom.html">Custom</a>
+    <a href="#about">About</a>
+    <a href="#how-it-works">How it works</a>
+  </div>
+  <div class="nav-right">
+    <button class="nav-cart">🛒 Cart (0)</button>
+    <button class="nav-order">Order Now</button>
+  </div>
+</nav>
+
+<!-- ─── HERO ─────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-pill">✦ Now taking orders across the UK</div>
+    <h1 class="hero-h1 fr">Print your<br><em>identity.</em></h1>
+    <p class="hero-sub">
+      Custom t-shirts, hoodies, mugs, caps, tote bags & more — for
+      <strong>birthdays, businesses, churches, and every celebration</strong> in between.
+    </p>
+    <p class="hero-location">Based in Scotland · UK-wide delivery</p>
+    <div class="hero-btns">
+      <button class="btn-dark" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">Shop All Products</button>
+      <a href="pages/custom.html"><button class="btn-outline">Design Your Own</button></a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <svg class="hero-canvas" viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <rect width="600" height="700" fill="#1c1410"/>
+      <circle cx="450" cy="180" r="250" fill="#d45d2a" opacity="0.12"/>
+      <circle cx="100" cy="580" r="180" fill="#f0a070" opacity="0.07"/>
+      <path d="M160 170 L85 240 L145 265 L140 480 L460 480 L455 265 L515 240 L440 170 L385 200 C365 212 340 220 300 220 C260 220 235 212 215 200 Z" fill="#d45d2a" opacity="0.2" stroke="#d45d2a" stroke-width="1.5"/>
+      <circle cx="300" cy="350" r="60" fill="none" stroke="#f0a070" stroke-width="1" opacity="0.5"/>
+      <text x="300" y="335" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#f0a070" opacity="0.7" font-style="italic">Milk +</text>
+      <text x="300" y="352" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#f0a070" opacity="0.7" font-style="italic">Jesus =</text>
+      <text x="300" y="369" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#f0a070" opacity="0.7" font-style="italic">Happy Me</text>
+      <circle cx="80" cy="560" r="12" fill="#ffffff" opacity="0.9"/>
+      <circle cx="108" cy="560" r="12" fill="#f9c6d5" opacity="0.9"/>
+      <circle cx="136" cy="560" r="12" fill="#a8c8f0" opacity="0.9"/>
+      <circle cx="164" cy="560" r="12" fill="#f8e08a" opacity="0.9"/>
+      <circle cx="192" cy="560" r="12" fill="#1c1410" stroke="#4a3020" stroke-width="1.5"/>
+      <text x="136" y="585" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#8a6050" letter-spacing="1" opacity="0.7">AVAILABLE COLOURS</text>
+    </svg>
+    <div class="hero-float-card">
+      <div class="avatar-row">
+        <div class="mini-avatar" style="background:#d45d2a;margin-left:0;">A</div>
+        <div class="mini-avatar" style="background:#4a7a9b;">B</div>
+        <div class="mini-avatar" style="background:#5a9a50;">C</div>
+      </div>
+      <p><strong>47 orders</strong> this month<br><span>⭐️ 4.9 · 120+ reviews</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── MARQUEE ──────────────────────────────────────────── -->
+<div class="marquee-bar">
+  <div class="marquee-track">
+    <span class="m-item">T-Shirts</span><span class="m-sep">✦</span>
+    <span class="m-item">Hoodies</span><span class="m-sep">✦</span>
+    <span class="m-item">Mugs</span><span class="m-sep">✦</span>
+    <span class="m-item">Tote Bags</span><span class="m-sep">✦</span>
+    <span class="m-item">Caps</span><span class="m-sep">✦</span>
+    <span class="m-item">Keychains</span><span class="m-sep">✦</span>
+    <span class="m-item">Gift Boxes</span><span class="m-sep">✦</span>
+    <span class="m-item">Tumblers</span><span class="m-sep">✦</span>
+    <span class="m-item">Bulk Orders</span><span class="m-sep">✦</span>
+    <span class="m-item">Baby Gifts</span><span class="m-sep">✦</span>
+    <!-- duplicated for seamless loop -->
+    <span class="m-item">T-Shirts</span><span class="m-sep">✦</span>
+    <span class="m-item">Hoodies</span><span class="m-sep">✦</span>
+    <span class="m-item">Mugs</span><span class="m-sep">✦</span>
+    <span class="m-item">Tote Bags</span><span class="m-sep">✦</span>
+    <span class="m-item">Caps</span><span class="m-sep">✦</span>
+    <span class="m-item">Keychains</span><span class="m-sep">✦</span>
+    <span class="m-item">Gift Boxes</span><span class="m-sep">✦</span>
+    <span class="m-item">Tumblers</span><span class="m-sep">✦</span>
+    <span class="m-item">Bulk Orders</span><span class="m-sep">✦</span>
+    <span class="m-item">Baby Gifts</span><span class="m-sep">✦</span>
+  </div>
+</div>
+
+<!-- ─── PRODUCT CATEGORIES ───────────────────────────────── -->
+<section class="cats" id="products">
+  <div class="section-tag">What we print on</div>
+  <h2 class="section-h2 fr">Everything you can imagine,<br>printed to perfection.</h2>
+  <div class="cats-grid">
+    <div class="cat-card" data-category="tshirts" data-name="T-Shirts">
+      <div class="cat-img c1">👕</div>
+      <div class="cat-body"><div class="cat-name fr">T-Shirts</div><div class="cat-sub">Kids & Adults · All sizes</div></div>
+    </div>
+    <div class="cat-card" data-category="hoodies" data-name="Hoodies & Sweatshirts">
+      <div class="cat-img c2">🧥</div>
+      <div class="cat-body"><div class="cat-name fr">Hoodies & Sweatshirts</div><div class="cat-sub">Cosy custom prints</div></div>
+    </div>
+    <div class="cat-card" data-category="mugs" data-name="Mugs & Tumblers">
+      <div class="cat-img c3">☕</div>
+      <div class="cat-body"><div class="cat-name fr">Mugs & Tumblers</div><div class="cat-sub">Perfect personalised gifts</div></div>
+    </div>
+    <div class="cat-card" data-category="caps" data-name="Caps">
+      <div class="cat-img c4">🧢</div>
+      <div class="cat-body"><div class="cat-name fr">Caps</div><div class="cat-sub">Embroidered & printed</div></div>
+    </div>
+    <div class="cat-card" data-category="tote-bags" data-name="Tote Bags">
+      <div class="cat-img c5">👜</div>
+      <div class="cat-body"><div class="cat-name fr">Tote Bags</div><div class="cat-sub">Eco-friendly canvas</div></div>
+    </div>
+    <div class="cat-card" data-category="keychains" data-name="Keychains">
+      <div class="cat-img c6">🔑</div>
+      <div class="cat-body"><div class="cat-name fr">Keychains</div><div class="cat-sub">Mini personal keepsakes</div></div>
+    </div>
+    <div class="cat-card" data-category="gift-boxes" data-name="Signature Gift Boxes">
+      <div class="cat-img c7">🎁</div>
+      <div class="cat-body"><div class="cat-name fr">Signature Gift Boxes</div><div class="cat-sub">Curated & branded sets</div></div>
+    </div>
+    <div class="cat-card" data-category="custom" data-name="Custom Design">
+      <div class="cat-img" style="background:#fde8f0;">✏️</div>
+      <div class="cat-body"><div class="cat-name fr">Custom Design</div><div class="cat-sub">You dream it, we print it</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 3 WAYS TO ORDER ──────────────────────────────────── -->
+<section class="sections-callout">
+  <div class="section-tag" style="color:#e8a87c;">Three ways to order</div>
+  <h2 class="section-h2 fr" style="color:#fff;margin-bottom:0;">Choose how you want to <em>create.</em></h2>
+  <div class="sc-grid">
+    <a href="pages/signature.html" class="sc-card">
+      <div class="sc-num fr">1</div>
+      <div class="sc-icon">✦</div>
+      <div class="sc-title fr">PFN Signature Designs</div>
+      <div class="sc-desc">Browse our original pre-made designs — personalise them with your photo and name. Perfect for baby gifts, birthdays, and celebrations.</div>
+      <div class="sc-link">Explore designs</div>
+    </a>
+    <a href="pages/custom.html" class="sc-card">
+      <div class="sc-num fr">2</div>
+      <div class="sc-icon">🎨</div>
+      <div class="sc-title fr">Create Your Own</div>
+      <div class="sc-desc">Upload your images, write your text, describe your vision. Our designers will bring it to life — fully custom, fully yours.</div>
+      <div class="sc-link">Start designing</div>
+    </a>
+    <a href="pages/custom.html?bulk=true" class="sc-card">
+      <div class="sc-num fr">3</div>
+      <div class="sc-icon">📦</div>
+      <div class="sc-title fr">Bulk Event Orders</div>
+      <div class="sc-desc">Planning a church event, corporate function, or family reunion? We handle large quantities with wholesale pricing and fast turnaround.</div>
+      <div class="sc-link">Get a bulk quote</div>
+    </a>
+  </div>
+</section>
+
+<!-- ─── HOW IT WORKS ─────────────────────────────────────── -->
+<section class="hiw" id="how-it-works">
+  <div class="section-tag">The process</div>
+  <h2 class="section-h2 fr">Order in four simple steps.</h2>
+  <div class="hiw-steps">
+    <div class="hiw-step">
+      <div class="hiw-circle fr">1</div>
+      <div class="hiw-title fr">Choose a product</div>
+      <div class="hiw-desc">Pick from our catalogue or bring your own idea — t-shirts, hoodies, mugs, and more.</div>
+    </div>
+    <div class="hiw-step">
+      <div class="hiw-circle fr">2</div>
+      <div class="hiw-title fr">Personalise it</div>
+      <div class="hiw-desc">Upload photos, add names, pick colours, and describe your design vision.</div>
+    </div>
+    <div class="hiw-step">
+      <div class="hiw-circle fr">3</div>
+      <div class="hiw-title fr">Approve & pay</div>
+      <div class="hiw-desc">We send a proof before printing. Secure checkout — cards, PayPal, and more.</div>
+    </div>
+    <div class="hiw-step">
+      <div class="hiw-circle fr">4</div>
+      <div class="hiw-title fr">Delivered to you</div>
+      <div class="hiw-desc">Your order ships across the UK, with express options available.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ABOUT US ──────────────────────────────────────────── -->
+<section class="about" id="about">
+  <div class="about-img-wrap">
+    <div class="about-img-placeholder">
+      <span>🖨️</span>
+      <p>Product photos coming soon</p>
+    </div>
+  </div>
+  <div class="about-text">
+    <div class="section-tag">Our story</div>
+    <h2 class="section-h2 fr" style="margin-bottom:1.25rem;">Where creativity<br>meets <em style="color:var(--brand);">purpose.</em></h2>
+    <p class="about-body">
+      PFN Prints is a custom printing brand that brings your ideas to life. We create personalised
+      t-shirts, hoodies, mugs, tote bags, caps, tumblers, keychains, and more for
+      <strong>individuals, businesses, and special events.</strong>
+    </p>
+    <p class="about-body">
+      From baby celebrations and birthdays to church programs, corporate events, and family gatherings —
+      we design prints that make every moment memorable. Need large quantities? We also offer
+      <strong>bulk orders and wholesale pricing</strong> for events and organisations.
+    </p>
+  </div>
+</section>
+
+<!-- ─── TESTIMONIALS ─────────────────────────────────────── -->
+<section class="testi">
+  <div class="section-tag">Happy customers</div>
+  <h2 class="section-h2 fr">Real people, real prints.</h2>
+  <div class="testi-grid">
+    <div class="testi-empty">
+      <div class="testi-empty-icon">💬</div>
+      <div class="testi-empty-title fr">No reviews yet — be the first!</div>
+      <p class="testi-empty-sub">We'd love to hear what you think. Place your first order and share your experience.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ────────────────────────────────────────────── -->
+<footer class="footer">
+  <div>
+    <img class="f-logo-img" src="https://res.cloudinary.com/ds6tdeqpm/image/upload/v1777206651/PFN_prgvr3.png" alt="PFN Prints" />
+    <p class="f-desc">Where creativity meets purpose. Custom printing for every moment that matters — delivered across the UK.</p>
+  </div>
+  <div>
+    <div class="f-h4">Shop</div>
+    <a href="pages/signature.html" class="f-link">Signature Designs</a>
+    <a href="pages/custom.html" class="f-link">Create Your Own</a>
+    <a href="pages/custom.html?bulk=true" class="f-link">Bulk Orders</a>
+  </div>
+  <div>
+    <div class="f-h4">Products</div>
+    <a href="#products" class="f-link">T-Shirts</a>
+    <a href="#products" class="f-link">Hoodies</a>
+    <a href="#products" class="f-link">Mugs & Tumblers</a>
+    <a href="#products" class="f-link">Tote Bags & Caps</a>
+  </div>
+  <div>
+    <div class="f-h4">Help</div>
+    <a href="#how-it-works" class="f-link">How it works</a>
+    <a href="#" class="f-link">Sizing guide</a>
+    <a href="#" class="f-link">Shipping & returns</a>
+    <a href="https://wa.me/2348067765321" class="f-link" target="_blank">Contact us</a>
+  </div>
+</footer>
+<div class="f-bottom">
+  <span class="f-copy">© 2025 PFN Prints. All rights reserved.</span>
+  <span class="f-made">Made with love 🖤</span>
+</div>
+
+<!-- ─── CHOICE MODAL ─────────────────────────────────────── -->
+<div class="modal-overlay" id="choice-modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('choice-modal')">✕</button>
+    <div class="modal-tag">Choose your path</div>
+    <h2 class="modal-title fr">How would you like to order?</h2>
+    <p class="modal-sub">How would you like to proceed?</p>
+    <div class="modal-choices">
+      <a href="pages/signature.html" class="modal-choice" data-modal-action="signature">
+        <div class="modal-choice-icon">✦</div>
+        <div class="modal-choice-title fr">Signature Design</div>
+        <div class="modal-choice-desc">Pick from our pre-made designs and personalise with your details.</div>
+      </a>
+      <a href="pages/custom.html" class="modal-choice" data-modal-action="custom">
+        <div class="modal-choice-icon">🎨</div>
+        <div class="modal-choice-title fr">Create Custom</div>
+        <div class="modal-choice-desc">Upload your own artwork or describe exactly what you want.</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
