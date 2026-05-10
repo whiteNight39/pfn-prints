@@ -79,6 +79,27 @@ function openChoiceModal(categoryId, categoryName) {
 }
 
 /* ── Init ────────────────────────────────────────────────── */
+function initHamburger() {
+  const btn    = document.getElementById('hamburger-btn');
+  const drawer = document.getElementById('mobile-nav');
+  if (!btn || !drawer) return;
+
+  btn.addEventListener('click', () => {
+    const isOpen = drawer.classList.toggle('open');
+    btn.classList.toggle('open', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+
+  drawer.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      drawer.classList.remove('open');
+      btn.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initCategoryCards();
+  initHamburger();
 });

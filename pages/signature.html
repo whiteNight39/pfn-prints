@@ -89,7 +89,19 @@
   <div class="nav-right">
     <button class="nav-cart">🛒 Cart (0)</button>
     <button class="nav-order">Order Now</button>
+    <button class="hamburger" id="hamburger-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
+</nav>
+
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+  <a href="../index.html#products">Shop</a>
+  <a href="signature.html">Signature Designs</a>
+  <a href="custom.html">Create Custom</a>
+  <a href="../index.html#about">About</a>
+  <a href="../index.html#how-it-works">How it works</a>
+  <a href="https://wa.me/2348067765321" target="_blank" class="mobile-nav-wa">💬 WhatsApp us</a>
 </nav>
 
 <!-- ─── PAGE HERO ────────────────────────────────────────── -->
@@ -269,6 +281,23 @@ if (paramCat) {
 }
 
 renderGallery();
+
+// ── Hamburger ─────────────────────────────────────────────
+;(function() {
+  const btn = document.getElementById('hamburger-btn');
+  const drawer = document.getElementById('mobile-nav');
+  if (!btn || !drawer) return;
+  btn.addEventListener('click', () => {
+    const open = drawer.classList.toggle('open');
+    btn.classList.toggle('open', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    drawer.classList.remove('open');
+    btn.classList.remove('open');
+    document.body.style.overflow = '';
+  }));
+})();
 </script>
 </body>
 </html>
